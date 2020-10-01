@@ -1,24 +1,2 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Meeting Room Booking Utility [Back-End]
+This application is the back end for a meeting room booking utility that could be used in an office building to manage the meeting rooms. The building dwelers need to make an account to make reservations for the meeting rooms and set a date and time for the meeting room they may want to use.
