@@ -11,7 +11,7 @@ test:
   encoding: unicode
   database: meeting_room_booking_tests
   pool: 5
-  username: sample_postgres
+  username: mike
   password:
 
 production:
@@ -19,5 +19,5 @@ production:
   encoding: unicode
   database: meeting_room_booking
   pool: 5
-  username: sample_postgres
+  username: mike
   password:
