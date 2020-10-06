@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  root 'bookings#index'
+  root 'statics#home'
   namespace 'api' do
-    post 'login',                     to: 'sessions#log_in'
+  post 'login',                     to: 'sessions#log_in'
     delete 'logout',                  to: 'sessions#logout'
     get 'logged_in',                  to: 'sessions#logged_in'
 
