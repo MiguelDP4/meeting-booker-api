@@ -14,7 +14,7 @@ Rails.application.routes.draw do
     delete 'booking/:id', to: 'bookings#destroy'
     patch 'booking/:id', to: 'bookings#update'
 
-    get 'conference_room', to: 'conference_rooms#index'
+    get 'conference_rooms', to: 'conference_rooms#index'
     get 'conference_room/:id', to: 'conference_rooms#show'
     post 'conference_room', to: 'conference_rooms#create'
     delete 'conference_room/:id', to: 'conference_rooms#destroy'
