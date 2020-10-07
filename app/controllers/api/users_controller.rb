@@ -10,6 +10,12 @@ module Api
       render json: {status: 'SUCCESS', message: 'Loaded user', data: user}, status: :ok
     end
 
+    def appointments
+      user = User.find_by(:name => params[:name])
+      bookings = user.find_bookings
+      render json: {status: 'SUCCESS', message: 'Loaded user appointments', data: bookings}, status: :ok
+    end
+
     def create
       user = User.new(user_params)
       

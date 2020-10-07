@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
     get 'users',                      to: 'users#index'
     get 'users/:name',                to: 'users#show'
+    get 'users/:name/appointments',   to: 'users#appointments'
     post 'users',                     to: 'users#create'
     delete 'users/:name',             to: 'users#destroy'
     patch 'users/:id',                to: 'users#update'
