@@ -11,17 +11,17 @@ class Booking < ApplicationRecord
     from_date = 30.days.ago if from_date.nil?
     to_date = Date.today + 30.days if to_date.nil?
 
-    if !room_id.nil? && !user_id.nil?
+    if room_id && user_id
       bookings = Booking.where(
         "user_id = ? AND conference_room_id = ?
         AND start >= ? AND start <= ?",
         user_id, room_id, from_date, to_date)
-    elsif room_id.nil? && !user_id.nil?
+    elsif room_id.nil? && user_id
       bookings = Booking.where(
         "user_id = ?
         AND start >= ? AND start <= ?",
         user_id, from_date, to_date)
-    elsif !room_id.nil? && user_id.nil?
+    elsif room_id && user_id.nil?
       bookings = Booking.where(
         "conference_room_id = ?
         AND start >= ? AND start <= ?",
